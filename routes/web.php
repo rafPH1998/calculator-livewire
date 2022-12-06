@@ -1,16 +1,11 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Livewire\Todo;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', Todo::class);
 
-Route::get('/todos', function () {
-    echo 'opa';
-});
+Route::view('calculator', 'welcome');
 
 
-require __DIR__.'/auth.php';

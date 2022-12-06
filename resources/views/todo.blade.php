@@ -1,3 +1,3 @@
 <x-app-layout>
-    <livewire:calculator />
+    <livewire:todo />
 </x-app-layout>
