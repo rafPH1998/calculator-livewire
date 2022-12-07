@@ -9,6 +9,10 @@ class Todo extends Component
 {
     public string $filter = 'all';
 
+    public $listeners = [
+        'todo::updated' => '$refresh'
+    ];
+
     public function render()
     {
         return view('livewire.todo', [

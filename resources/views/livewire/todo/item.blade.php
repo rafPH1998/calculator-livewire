@@ -6,7 +6,7 @@
             focus-within:border-blue-500
             @if ($todo->checked) bg-yellow-500 @else bg-gray-800 @endif">
 
-            <input type="checkbox" class="opacity-0 absolute" @if ($todo->checked) checked @endif>
+            <input type="checkbox" class="opacity-0 absolute" wire:model="todo.checked">
 
             @if ($todo->checked)
                 <svg class="fill-current w-6 h-6 text-gray-800 pointer-events-none" viewBox="0 0 20 20">
