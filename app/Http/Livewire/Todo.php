@@ -10,7 +10,8 @@ class Todo extends Component
     public string $filter = 'all';
 
     public $listeners = [
-        'todo::updated' => '$refresh'
+        'todo::updated' => '$refresh',
+        'todo::created' => '$refresh'
     ];
 
     public function render()
